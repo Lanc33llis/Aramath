@@ -1,7 +1,17 @@
 doctype html
-html
+html(lang="en-us")
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title=page.title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel="stylesheet", href="/css/style.css")
+    if page.css && typeof page.css === "object"
+      each filename in page.css
+        link(rel="stylesheet", href=`/css/${filename}`)
+    else if page.css
+        link(rel="stylesheet", href=`/css/${page.css}`)
   body
-    block content
+    main
+      block content
+  script(src="js/default.js")

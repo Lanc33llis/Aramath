@@ -1,0 +1,51 @@
+html, body {
+  /* height: 100%; */
+}
+
+main {
+  /* padding: 50px; */
+  height: 100%;
+}
+
+.index-title {
+  padding: 25px;
+}
+
+.index-splash {
+  width: 100%;
+  background-image: url("../images/SVG/aramath-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.index-examples {
+  display: flex;
+  height: auto;
+  flex-grow: 1;
+}
+
+.index-example {
+  width: calc(100% / 3);
+  background-color: black;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  color:#b62b2b;
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 64px;
+}
+

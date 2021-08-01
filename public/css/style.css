@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Epilogue;
+  src: url("../fonts/Epilogue-VariableFont_wght.ttf") format("truetype")
+}
+
+:root {
+  --bg-color: rgb(30, 30, 30)
+}
+
+body {
+  font-family: Epilogue, Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+h1, h2, h3 {
+  font-variation-settings: 'wght' 200;
+}
+
+p {
+  font-variation-settings: 'wght' 200;
+}
